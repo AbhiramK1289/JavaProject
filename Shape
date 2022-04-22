@@ -1,0 +1,36 @@
+// In this program I covered Inheritence
+public class Shape {
+	
+	public static void main(String[] args) {
+		Square s1 = new Square();
+		Rectangle s2 = new Rectangle();
+		Triangle s3 = new Triangle();
+		
+		System.out.println("Area of Square is " + s1.area());
+		System.out.println("Area of Rectangle is "+ s2.area());
+		System.out.println("Area of Triangle is " + s3.area());
+	}
+}
+
+class Square extends Shape{
+	int side = 4;
+	int area() {
+		return side * side;
+	}
+}
+
+class Rectangle extends Shape{
+	int length = 10;
+	int breadth = 20;
+	float area() {
+		return length * breadth;
+	}
+}
+
+class Triangle extends Shape{
+	int height = 6;
+	int breadth = 5;
+	float area() {
+		return 0.5f * breadth * height;
+	}
+}
