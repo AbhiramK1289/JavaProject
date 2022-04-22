@@ -1,0 +1,16 @@
+// In this program I covered Method Overloading
+public class ShapePoly {
+	public static void main(String args[]) {
+		System.out.println("Area of Rectangle is " + Calculation.area(10, 20));
+		System.out.println("Area of Triangle is " + Calculation.area(10.0f, 8.0f));
+	}
+}
+
+class Calculation{
+	static int area(int height, int breadth) {
+		return height * breadth;
+	}
+	static float area(float height, float breadth) {
+		return 0.5f * height * breadth;
+	}
+}
