@@ -1,0 +1,53 @@
+// In this program I covered Encapsulation
+public class Employee{
+    private int id;
+    private String name;
+    private int age;
+    private String email;
+
+    public int getId(){
+       return id;
+     }
+    
+    public String getName(){
+       return name;
+     }
+    
+    public int getAge(){
+       return age;
+     }
+   
+    public String getEmail(){
+       return email;
+     }
+
+    public void setId(int newId){
+       this.id =  newId;
+     }
+    
+    public void setName(String newName){
+       this.name = newName;
+     }
+    
+    public void setAge(int newAge){
+       this.age = newAge;
+     }
+   
+    public void setEmail(String newEmail){
+       this.email = newEmail;
+     }
+
+
+    public static void main(String args[]){
+          Employee e = new Employee();
+          e.setId(01);
+          e.setName("Abhiram");
+          e.setAge(22);
+          e.setEmail("kodi.abhiram1289@gmail.com");
+          System.out.println("Id : " + e.getId() + "\n" 
+                           + "Name : " + e.getName() + "\n" 
+                           + "Age : " + e.getAge() + "\n"
+                           + "Email Id : " + e.getEmail() );                             
+     }
+
+}
