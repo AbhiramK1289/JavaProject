@@ -1,0 +1,22 @@
+// In this program I covered Method Overriding
+public class ShapePoly2 {
+	void display() {
+		System.out.println("Shape");
+	}
+	public static void main(String args[]) {
+		ShapePoly2 obj = new Square2();
+		obj.display();
+	}
+}
+
+class Circle2 extends ShapePoly2{
+	void display() {
+		System.out.println("Circle");
+	}
+}
+
+class Square2 extends ShapePoly2{
+	void display() {
+		System.out.println("Square");
+	}
+}
