@@ -1,0 +1,31 @@
+// In this method I covered Abstraction, classes and objects
+
+public class Circle implements CircleInterface{
+
+    public void display() {
+        System.out.println("Radius of Circle is ");
+    }
+
+    public float area( float radius){
+
+        return 3.14f * radius * radius;
+    }
+    public float diameter(float radius){
+
+        return radius + radius;
+    }
+    public float circumference(float radius){
+        return 2 * 3.14f * radius;
+    }
+    public static void main(String[] args){
+        Circle c1 = new Circle();
+        Circle c2 = new Circle();
+        Circle c3 = new Circle();
+        Circle c4 = new Circle();
+        c4.display();
+        System.out.println(radius);
+        System.out.println("Area of Circle is " + c1.area(10f) + "\n" + "Area of diameter is "
+                + c2.diameter(10f) + "\n" + "circumference of circle is " +
+                c3.circumference(10f));
+    }
+}
