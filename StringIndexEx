@@ -1,0 +1,14 @@
+// In this i used String Index Out of Bounds Exception....
+public class StringIndexEx {
+	public static void main(String[] args) {
+		try {
+			String b = "My name is Abhiram";
+			char c = b.charAt(30);
+			System.out.println(c);
+		}
+		catch(StringIndexOutOfBoundsException se) {
+			System.out.println(se.toString());
+		}
+	}
+
+}
