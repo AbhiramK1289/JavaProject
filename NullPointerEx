@@ -1,0 +1,14 @@
+// In this i used null pointer Exception....
+public class NullPointerEx {
+	public static void main(String[] args) {
+		try {
+			String a = null;
+			
+			System.out.println(a.charAt(0));
+			
+		}
+		catch(NullPointerException ne) {
+			System.out.println(ne.toString());
+		}
+	}
+}
