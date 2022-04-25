@@ -1,0 +1,12 @@
+// In this i used Array Index out of Bounds Exception....
+public class ArrayIndexEx {
+	public static void main(String[] args) {
+		try {
+			int a[] = new int[5];
+			a[6] = 9;
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(e.toString());
+		}
+	}
+}
