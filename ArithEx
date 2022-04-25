@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ArithEx {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		try {
+			System.out.println("Enter a value");
+			int a = sc.nextInt();
+			System.out.println("Enter b value");
+			int b = sc.nextInt();
+			int c = a/b;
+
+			 System.out.println("The Result of a/b is " + c);
+		}
+		catch(ArithmeticException e) {
+			System.out.println(e.toString());
+		}
+		finally {
+			System.out.println("if we put b value as zero  -- Divided by zero is not possible");
+		}
+	}
+}
