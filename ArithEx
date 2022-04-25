@@ -1,3 +1,4 @@
+// In this i used Arithmetic Exception Handling...
 import java.util.Scanner;
 public class ArithEx {
 	public static void main(String[] args) {
